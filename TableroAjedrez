@@ -1,0 +1,28 @@
+
+program TableroAjedrez;
+uses SysUtils;
+const
+  N = 8;
+var
+  i, j: Integer;
+begin
+  { Encabezado columnas }
+  Write('   ');
+  for j := 1 to N do
+    Write(Char(Ord('A') + j - 1), ' ');
+  Writeln;
+
+  for i := 1 to N do
+  begin
+    { etiqueta fila (8..1) }
+    Write(Format('%2d ', [N - i + 1]));
+    for j := 1 to N do
+    begin
+      if ((i + j) mod 2) = 0 then
+        Write('# ')   { casilla "oscura" }
+      else
+        Write('  ');  { casilla "clara" }
+    end;
+    Writeln;
+  end;
+end.
