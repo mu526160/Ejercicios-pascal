@@ -1,4 +1,4 @@
-program PiramideCentradaTotal;
+program Volcan;
 uses crt;
 var
   i, j, n: integer;
@@ -26,3 +26,4 @@ begin
 
   readln;
 end.
+
