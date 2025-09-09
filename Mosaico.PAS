@@ -1,4 +1,4 @@
-program TableroAjedrez;
+program Mosaico;
 uses crt;
 var
   i, j: integer;
